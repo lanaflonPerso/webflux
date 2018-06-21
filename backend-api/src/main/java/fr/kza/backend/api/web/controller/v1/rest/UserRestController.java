@@ -26,8 +26,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RequestMapping(path = "/api/rest/user", produces = { APPLICATION_JSON_UTF8_VALUE })
 public class UserRestController {
 
-	private UserReactiveCrudRepository
-			repo;
+	private UserReactiveCrudRepository repo;
 	public UserRestController(UserReactiveCrudRepository repo) {
 		this.repo = repo;
 	};
@@ -39,7 +38,7 @@ public class UserRestController {
 	 * 
 	 * @return HTTP 200 if users found or HTTP 204 otherwise.
 	 */
-	//@PreAuthorize("hasRole('ADMIN')")
+	@PreAuthorize("hasRole('ADMIN')")
 	@RequestMapping(method = GET)
 	public Mono<ResponseEntity<List<User>>> allUsers() {
 

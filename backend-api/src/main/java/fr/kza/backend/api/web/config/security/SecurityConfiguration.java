@@ -1,5 +1,7 @@
-package fr.kza.backend.infra.config.security;
+package fr.kza.backend.api.web.config.security;
 
+import fr.kza.backend.infra.config.security.CustomPasswordEncoder;
+import fr.kza.backend.infra.config.security.UnauthorizedAuthenticationEntryPoint;
 import fr.kza.backend.infra.config.security.jwt.JwtAuthenticationWebFilter;
 import fr.kza.backend.infra.config.security.jwt.JwtTokenUtil;
 import org.springframework.context.annotation.Bean;
