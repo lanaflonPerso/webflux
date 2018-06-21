@@ -1,5 +1,6 @@
 # JACKSON
 spring:
+
   jackson:
     serialization:
       INDENT_OUTPUT: true
@@ -9,6 +10,9 @@ spring:
       host: localhost
       port: 27017
       database: template
+  devtools:
+    livereload:
+      enabled: true
 
 jwt:
   header: Authorization

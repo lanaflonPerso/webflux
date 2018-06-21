@@ -13,7 +13,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/test/ws">Transempiric Webflux Template</a>
+                <a class="navbar-brand" href="/test/ws">Yeah Transempiric Webflux Template</a>
             </div>
         </div>
     </nav>
@@ -36,7 +36,7 @@
 
     <script type="application/javascript">
         // Use "wss://" for HTTPS
-        var socket = new WebSocket("ws://" + location.host + "/api/ws/echotest?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZGV2IiwiYXVkIjoidW5rbm93biIsImV4cCI6MjEzMTEyOTA2MCwiaWF0IjoxNTI2MzI5MDYwfQ.KM-cb8vcuO6QQCFpbcHrj96TJLbQjPc5_8SN88aM3xTE89e_9HXSZnSW7XexhwFAej7hbMj4t8q65uXV8Vi08g");
+        var socket = new WebSocket("ws://" + location.host + "/api/ws/echotest?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZGV2IiwiYXVkIjoidW5rbm93biIsImV4cCI6MjEzNDQxMTIwMSwiaWF0IjoxNTI5NjExMjAxfQ.7uwZtkCx37zOiu7BbFR0l9LfvZhyOlfjVGzXjnSU2C1dpqqlEzHJpZDxfYYjEM_urwZwUh8Ek4c8MZ1v6hA9ag");
         addEvent("keypress", document.getElementById('input'), function(event) {
             socket.send(event.key);
         });
